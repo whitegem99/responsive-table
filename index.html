@@ -9,10 +9,13 @@
         table {
             border: 1px solid #ccc;
             border-collapse: collapse;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             width: 100%;
             table-layout: fixed;
+            color: #fff;
+            font-size: 14px;
+            max-width: 1500px;
         }
 
         table caption {
@@ -21,21 +24,20 @@
         }
 
         table tr {
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
+            background-color: rgba(24, 186, 189, 0.9);
+            border: 1px solid #fff;
             padding: .35em;
         }
 
         table th,
         table td {
-            padding: .625em;
-            text-align: center;
+            padding: 8px;
         }
 
         table th {
-            font-size: .85em;
-            letter-spacing: .1em;
+            font-size: 12px;
             text-transform: uppercase;
+            text-align: left;
         }
 
         @media screen and (max-width: 600px) {
@@ -59,15 +61,14 @@
             }
 
             table tr {
-                border-bottom: 3px solid #ddd;
+                border-bottom: 3px solid #fff;
                 display: block;
                 margin-bottom: .625em;
             }
 
             table td {
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #fff;
                 display: block;
-                font-size: .8em;
                 text-align: right;
             }
 
@@ -97,39 +98,93 @@
 
 <body>
     <table>
-        <caption>Statement Summary</caption>
+        <caption style="color: black;">Statement Summary</caption>
         <thead>
             <tr>
-                <th scope="col">Account</th>
-                <th scope="col">Due Date</th>
-                <th scope="col">Amount</th>
-                <th scope="col">Period</th>
+                <th scope="col" style="width: 40px;">No</th>
+                <th scope="col">Booking ID</th>
+                <th scope="col">Ticket Title</th>
+                <th scope="col">Email</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col" style="width: 50px;">Adult</th>
+                <th scope="col" style="width: 50px;">Child</th>
+                <th scope="col" style="width: 50px;">Senior</th>
+                <th scope="col" style="width: 50px;">Infant</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td data-label="Account">Visa - 3412</td>
-                <td data-label="Due Date">04/01/2016</td>
-                <td data-label="Amount">$1,190</td>
-                <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                <td data-label="No">1</td>
+                <td data-label="Booking ID">65ae8132726502541f581386</td>
+                <td data-label="Ticket Title">Ticket with all price</td>
+                <td data-label="Email">kezaru@user.com</td>
+                <td data-label="Name">Kezaru User</td>
+                <td data-label="Date">January 24, 2024</td>
+                <td data-label="Adult">1</td>
+                <td data-label="Child">0</td>
+                <td data-label="Senior">0</td>
+                <td data-label="Infant">0</td>
             </tr>
             <tr>
-                <td scope="row" data-label="Account">Visa - 6076</td>
-                <td data-label="Due Date">03/01/2016</td>
-                <td data-label="Amount">$2,443</td>
-                <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                <td data-label="No">2</td>
+                <td data-label="Booking ID">65ae8132726502541f581386</td>
+                <td data-label="Ticket Title">Ticket with all price</td>
+                <td data-label="Email">kezaru@user.com</td>
+                <td data-label="Name">Kezaru User</td>
+                <td data-label="Date">January 24, 2024</td>
+                <td data-label="Adult">1</td>
+                <td data-label="Child">0</td>
+                <td data-label="Senior">0</td>
+                <td data-label="Infant">0</td>
             </tr>
             <tr>
-                <td scope="row" data-label="Account">Corporate AMEX</td>
-                <td data-label="Due Date">03/01/2016</td>
-                <td data-label="Amount">$1,181</td>
-                <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                <td data-label="No">3</td>
+                <td data-label="Booking ID">65ae8132726502541f581386</td>
+                <td data-label="Ticket Title">Ticket with all price</td>
+                <td data-label="Email">kezaru@user.com</td>
+                <td data-label="Name">Kezaru User</td>
+                <td data-label="Date">January 24, 2024</td>
+                <td data-label="Adult">1</td>
+                <td data-label="Child">0</td>
+                <td data-label="Senior">0</td>
+                <td data-label="Infant">0</td>
             </tr>
             <tr>
-                <td scope="row" data-label="Acount">Visa - 3412</td>
-                <td data-label="Due Date">02/01/2016</td>
-                <td data-label="Amount">$842</td>
-                <td data-label="Period">01/01/2016 - 01/31/2016</td>
+                <td data-label="No">4</td>
+                <td data-label="Booking ID">65ae8132726502541f581386</td>
+                <td data-label="Ticket Title">Ticket with all price</td>
+                <td data-label="Email">kezaru@user.com</td>
+                <td data-label="Name">Kezaru User</td>
+                <td data-label="Date">January 24, 2024</td>
+                <td data-label="Adult">1</td>
+                <td data-label="Child">0</td>
+                <td data-label="Senior">0</td>
+                <td data-label="Infant">0</td>
+            </tr>
+            <tr>
+                <td data-label="No">5</td>
+                <td data-label="Booking ID">65ae8132726502541f581386</td>
+                <td data-label="Ticket Title">Ticket with all price</td>
+                <td data-label="Email">kezaru@user.com</td>
+                <td data-label="Name">Kezaru User</td>
+                <td data-label="Date">January 24, 2024</td>
+                <td data-label="Adult">1</td>
+                <td data-label="Child">0</td>
+                <td data-label="Senior">0</td>
+                <td data-label="Infant">0</td>
+            </tr>
+            <tr>
+                <td data-label="No">6</td>
+                <td data-label="Booking ID">65ae8132726502541f581386</td>
+                <td data-label="Ticket Title">Ticket with all price</td>
+                <td data-label="Email">kezaru@user.com</td>
+                <td data-label="Name">Kezaru User</td>
+                <td data-label="Date">January 24, 2024</td>
+                <td data-label="Adult">1</td>
+                <td data-label="Child">0</td>
+                <td data-label="Senior">0</td>
+                <td data-label="Infant">0</td>
             </tr>
         </tbody>
     </table>
